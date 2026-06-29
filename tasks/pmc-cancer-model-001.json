@@ -1,0 +1,36 @@
+{
+  "id": "pmc-cancer-model-001",
+  "title": "Canonical corpus-record model + manifest schema",
+  "project": "pmc-oa-cancer-corpus",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-access", "literature", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The PMC Open Access Subset and Europe PMC OA holdings contain a large, mixed-license body of cancer literature but no oncology-curated, license-clear, reproducible corpus. Before building any corpus, the project needs one canonical per-article record model and a manifest schema that all outputs (license-segregated bundles, datasheet, normalized metadata) are projections of. The corpus is research-/builder-facing infrastructure: no patient-facing content, no controlled-access or identifiable patient data, provenance on every record. Our contributions are CC-BY-4.0 (code MIT); redistributed source articles retain their original CC license and are never relicensed.",
+  "objective": "Define the canonical corpus-record model and the machine-validatable manifest schema that every per-corpus task projects from, including license, license-tier, provenance, cancer-guardrail, and patient-content-flag fields.",
+  "acceptanceCriteria": [
+    "Record model documents all fields: pmcid, pmid, doi, title, journal, pubYear, authors[], license {id, url, source, permitsRedistribution, permitsDerivatives, commercialUse, snapshotRef}, licenseTier (commercial|non-commercial|no-derivatives|metadata-only|excluded), provenance {sourceService, retrievedAt, snapshotVersion, meshVersion, attribution}, mesh[], cancerTypes[], studyType, dataAvailability {aggregateOnly, mentionsControlledAccess, datasetRefs[]}, patientContentFlag {flagged, reason, action}, fullText {available, format, reuseAllowedInBundle}, exclusion {excluded, reason}, specVersions {jats, mesh, datasheet}.",
+    "Manifest is JSON/JSON-LD and validates against a committed JSON Schema; bundles and datasheet are documented as projections of the canonical record.",
+    "Model states the scope boundary explicitly: corpus + metadata only, no patient-facing content, no controlled-access/identifiable patient data, provenance required on every record.",
+    "Licensing rules are captured: our metadata/manifest/datasheet are CC-BY-4.0, pipeline code is MIT, and redistributed source articles retain their original CC license (never relicensed).",
+    "At least one filled-in worked example record skeleton is included.",
+    "pnpm build && pnpm test && pnpm lint pass for any committed schema tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\pmc-oa-cancer-corpus\\PLAN.md",
+    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "PMC Open Access Subset + NCBI OA Web Service (license fields)",
+    "Europe PMC REST API; MeSH Neoplasms tree (C04); JATS; SPDX/Creative Commons license list",
+    "Datasheets for Datasets (Gebru et al.)"
+  ],
+  "output": "A canonical corpus-record model definition plus a machine-validatable manifest JSON Schema, committed to the project repo and ready for reuse by all per-corpus build, gate, and metadata tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
