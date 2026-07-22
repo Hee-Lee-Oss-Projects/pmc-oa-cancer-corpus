@@ -11,7 +11,7 @@
   "deliverable": "pr",
   "tokenEstimate": "small",
   "status": "open",
-  "context": "The Elyos 'delivered, not merged' standard requires tracking acceptance and reuse events. Currently these are recorded in the outcome ledger (JSON files) but there is no summary view. A lightweight dashboard that reads the outcome ledger and displays acceptance evidence, reuse events, and success-metric status makes the project's delivery evidence visible to contributors, maintainers, and potential partners — supporting the steward's work and the project's credibility.",
+  "context": "The Hee-Lee Oss 'delivered, not merged' standard requires tracking acceptance and reuse events. Currently these are recorded in the outcome ledger (JSON files) but there is no summary view. A lightweight dashboard that reads the outcome ledger and displays acceptance evidence, reuse events, and success-metric status makes the project's delivery evidence visible to contributors, maintainers, and potential partners — supporting the steward's work and the project's credibility.",
   "objective": "Implement a lightweight outcome dashboard that reads the project's outcome ledger (outcomes/*.json) and displays acceptance evidence, reuse events, and current status against the project's success metrics.",
   "acceptanceCriteria": [
     "Dashboard reads the outcome ledger (outcomes/*.json files in the repo) and displays: number of corpus releases, acceptance evidence per release (partner name or Zenodo DOI), recorded reuse events with external evidence links, and current success-metric status (license correctness, leakage counts, reuse event count).",
@@ -23,7 +23,7 @@
     "pmc-cancer-reuse-018 (outcome ledger format to read from)",
     "pmc-cancer-partner-011 (acceptance evidence format)",
     "PLAN.md (Success metrics table — the metrics the dashboard displays)",
-    "C:\\code\\elyos\\CLAUDE.md (Elyos 'delivered, not merged' standard)"
+    "C:\\code\\hee-lee-oss\\CLAUDE.md (Hee-Lee Oss 'delivered, not merged' standard)"
   ],
   "output": "A merged PR adding a static outcome dashboard generator (TypeScript/ESM) that reads outcomes/*.json and emits a summary report of acceptance evidence, reuse events, and success-metric status.",
   "requestor": "TO BE SECURED",

@@ -22,9 +22,9 @@
     "pnpm build && pnpm test && pnpm lint pass for any committed schema tooling; commit is DCO signed-off."
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\pmc-oa-cancer-corpus\\PLAN.md",
-    "C:\\code\\elyos\\planning\\ROADMAP.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\pmc-oa-cancer-corpus\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\planning\\ROADMAP.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "PMC Open Access Subset + NCBI OA Web Service (license fields)",
     "Europe PMC REST API; MeSH Neoplasms tree (C04); JATS; SPDX/Creative Commons license list",
     "Datasheets for Datasets (Gebru et al.)"

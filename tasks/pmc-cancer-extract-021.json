@@ -25,7 +25,7 @@
     "pmc-cancer-fullbuild-010 (M1 corpus — source of full-text articles for extraction)",
     "pmc-cancer-gate-002 (ND exclusion rule + license filter)",
     "pmc-cancer-model-001 (canonical record — provenance fields for extracted data)",
-    "C:\\code\\elyos\\packages\\runner (funded-lane metered runner)",
+    "C:\\code\\hee-lee-oss\\packages\\runner (funded-lane metered runner)",
     "PLAN.md (Dependencies — funded lane via packages/runner)"
   ],
   "output": "A supplementary structured-extraction dataset: per-article extracted fields (entities, relationships, statistical summaries) with full provenance, committed as an extension of the M2 corpus manifest, with spot-audit results and cost receipts recorded.",

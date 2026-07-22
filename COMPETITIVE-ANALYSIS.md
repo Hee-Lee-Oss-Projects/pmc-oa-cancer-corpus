@@ -323,7 +323,7 @@ else operationalizes). Concrete fillable gaps:
   outcome) over commercial-OK full text, with a hard budget cap (`extract-021`).
 - **Corpus MCP server** — serve manifest queries, per-tier slices, and provenance over MCP so
   Claude/agents retrieve license-clean cancer literature on demand (RAG without re-deriving the
-  license puzzle). Strong fit with Elyos's agent-facing thesis.
+  license puzzle). Strong fit with Hee-Lee Oss's agent-facing thesis.
 - **License-tiering microservice / SPDX-for-PMC** — expose the OA-field×JATS cross-check +
   decomposed flags as a standalone service others can call; potential community standard.
 

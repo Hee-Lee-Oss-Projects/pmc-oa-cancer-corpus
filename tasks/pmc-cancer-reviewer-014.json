@@ -24,7 +24,7 @@
   "resources": [
     "PLAN.md (Governance, roles & stakeholders section)",
     "TASKS.md (gate-002 acceptance criteria — the rules the reviewer must accept)",
-    "C:\\code\\elyos\\CLAUDE.md (refusal guardrails)"
+    "C:\\code\\hee-lee-oss\\CLAUDE.md (refusal guardrails)"
   ],
   "output": "A committed document (e.g., docs/reviewers.md or similar) recording the License+compliance reviewer name(s), qualifications, role scope, rotation/escalation rules, and review channel; merged to main before the M0 pilot review.",
   "requestor": "TO BE SECURED",

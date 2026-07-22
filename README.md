@@ -6,7 +6,7 @@ Cancer research moves fast and is scattered across hundreds of journals. Researc
 
 **Definition of shipped:** datasheet + provenance) that: (1) passes the license + cancer-guardrail gate with a committed audit artifact showing **100% license correctness on the audit sample and zero tier/patient-content leakage**; (2) is deterministically reproducible (manifest hash reproduces); (3) meets
 
-This is an **Elyos** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/elyos
+This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
@@ -15,8 +15,8 @@ This is an **Elyos** good-deed project. Contributors pull a task, do it with the
 
 ## Contribute
 ```bash
-elyos browse
-elyos next --repo Elyos-Projects/pmc-oa-cancer-corpus --no-fork
+hee-lee-oss browse
+hee-lee-oss next --repo Hee-Lee-Oss-Projects/pmc-oa-cancer-corpus --no-fork
 ```
 
 ## Licensing & review

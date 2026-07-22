@@ -11,7 +11,7 @@
   "deliverable": "document",
   "tokenEstimate": "small",
   "status": "open",
-  "context": "The project's Definition of Shipped requires a real beneficiary: a corpus that is produced but not used or accepted fails the Elyos 'delivered, not merged' standard. This outreach task ensures M0 does not conclude with an unused corpus. The self-serve Zenodo DOI fallback means M0 can yield a citable, accepted outcome even without a named partner — but finding a real consumer (lab/advocacy/NLP group) is preferred. Until a consumer is confirmed, all delivery-dependent tasks carry verifiedNeed:false.",
+  "context": "The project's Definition of Shipped requires a real beneficiary: a corpus that is produced but not used or accepted fails the Hee-Lee Oss 'delivered, not merged' standard. This outreach task ensures M0 does not conclude with an unused corpus. The self-serve Zenodo DOI fallback means M0 can yield a citable, accepted outcome even without a named partner — but finding a real consumer (lab/advocacy/NLP group) is preferred. Until a consumer is confirmed, all delivery-dependent tasks carry verifiedNeed:false.",
   "objective": "Open ≥ 1 partner outreach thread with a candidate consumer (academic cancer-informatics lab, patient-advocacy research program, biomedical-NLP community, or BioNLP/Europe PMC ecosystem), document the outreach and responses, and establish the Zenodo fallback release path as a concrete alternative if no partner confirms by the M0 pilot release.",
   "acceptanceCriteria": [
     "At least 1 partner-outreach thread is opened with a named candidate consumer (lab, advocacy org, or NLP group), with the initial message and contact recorded in a committed document.",
@@ -24,7 +24,7 @@
     "PLAN.md (Problem & beneficiaries; Cold-start de-risking; Partner org section)",
     "Zenodo deposit documentation — https://zenodo.org/deposit",
     "Europe PMC ecosystem / BioNLP community contacts",
-    "C:\\code\\elyos\\CLAUDE.md (Elyos 'delivered, not merged' standard)"
+    "C:\\code\\hee-lee-oss\\CLAUDE.md (Hee-Lee Oss 'delivered, not merged' standard)"
   ],
   "output": "A committed document recording all partner outreach threads, responses, the chosen M0 release path (partner or Zenodo), and the Zenodo fallback procedure — to be updated as outreach progresses and referenced by pmc-cancer-partner-011.",
   "requestor": "TO BE SECURED",

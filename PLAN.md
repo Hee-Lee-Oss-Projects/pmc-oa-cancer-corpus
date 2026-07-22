@@ -214,7 +214,7 @@ mentionsControlledAccess:boolean, datasetRefs[]}`,
 `fullText {available:boolean, format ("jats"|"txt"|"none"), reuseAllowedInBundle:boolean}`,
 `exclusion {excluded:boolean, reason}`, `specVersions {jats, mesh, datasheet}`.
 
-**Tech stack.** TypeScript, ESM, pnpm workspaces (per Elyos conventions). The pipeline is a
+**Tech stack.** TypeScript, ESM, pnpm workspaces (per Hee-Lee Oss conventions). The pipeline is a
 small set of Node packages with minimal dependencies. Sources accessed via the **NCBI PMC OA
 Web Service / FTP file lists** and the **Europe PMC REST API** (both official, no scraping,
 respect rate limits, no API keys committed). Corpus artifacts are JATS XML / text + JSON/JSON-LD
@@ -436,7 +436,7 @@ there. The cancer-guardrail + license gate is the spine that every per-corpus ta
 - **Standards/specs (pinned — see Tech stack):** JATS, SPDX + Creative Commons license ids,
   Datasheets for Datasets (Gebru et al.), schema.org/Dataset for the manifest descriptor.
 - **External archive (self-serve fallback):** Zenodo (versioned record + DOI).
-- **Elyos pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
   (`packages/cli`), good-deed definition + refusal guardrails. No funded-lane/runner dependency
   (donated lane). *If* a large-scale extraction pass is later funded, it would run via
   `packages/runner` with a hard budget cap (see Backlog).
@@ -462,7 +462,7 @@ there. The cancer-guardrail + license gate is the spine that every per-corpus ta
   Main surfaces are CI and the released artifacts.
 - **Secrets handling:** the pipeline needs no credentials by default (PMC OA/Europe PMC are
   open). Any optional API token (e.g. higher NCBI rate limits) is supplied at runtime by the
-  human and **never** written to logs, receipts, or committed files (per Elyos rules).
+  human and **never** written to logs, receipts, or committed files (per Hee-Lee Oss rules).
 - **Patient privacy (dominant concern):** handled by guardrail #2 — identifiable-patient-content
   screen forces flagged articles to metadata-only; we never ingest controlled-access/individual-level
   data and never de-identify/re-identify. No individual-level health data is stored.
@@ -500,11 +500,11 @@ there. The cancer-guardrail + license gate is the spine that every per-corpus ta
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good Deed Definition + risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task JSON schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\elyos\planning\ROADMAP.md`
-- Sibling project (license/PII gate pattern) — `C:\code\elyos\planning\projects\open-data-datasheets\PLAN.md`
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good Deed Definition + risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task JSON schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\hee-lee-oss\planning\ROADMAP.md`
+- Sibling project (license/PII gate pattern) — `C:\code\hee-lee-oss\planning\projects\open-data-datasheets\PLAN.md`
 - PMC Open Access Subset + NCBI OA Web Service / FTP file lists (license fields)
 - Europe PMC REST API + OA holdings
 - MeSH (Medical Subject Headings), Neoplasms tree (C04)
@@ -560,7 +560,7 @@ plan above (and to `TASKS.md`). Each is concrete and reflected in the documents.
 19. **Made cold-start acceptance realistic** with a self-serve **Zenodo DOI fallback** so M0 can hit
     a real *accepted/citable* outcome without a third party.
 20. **Set honest `verifiedNeed: false`** across tasks until a named consumer/partner is secured, and
-    `requestor: TO BE SECURED`, per Elyos honesty conventions.
+    `requestor: TO BE SECURED`, per Hee-Lee Oss honesty conventions.
 21. **Added retraction / removed-from-OA handling** in M3 (remove from bundles, keep metadata-only
     with reason) — corpora go stale and articles get withdrawn.
 22. **Made all success metrics outcome-based and beneficiary-centric** (license correctness, zero
